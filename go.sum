@@ -60,6 +60,8 @@ github.com/flintdev/workflow-engine v0.2.1 h1:g8rL2nedgnf7xxQHIA03miXVMfbBhzbJQM
 github.com/flintdev/workflow-engine v0.2.1/go.mod h1:UhSJu09H8+UwDSNsEFs1Nc7LLZrmlul7Tyzmq1ybXlA=
 github.com/flintdev/workflow-engine v0.2.2 h1:wSi6n3nQeQ92KCP0VehZpjZXZjn4kuLlA4Dp5GSJn28=
 github.com/flintdev/workflow-engine v0.2.2/go.mod h1:A2D+p9rUgQ53MG633xm9pmyHCk/LvBn6CpP1EZS0ANo=
+github.com/flintdev/workflow-engine v0.2.5 h1:i/i/CKmvZAWkSOstnw2JKcIGfUNLd5MfvDvrjL35s0s=
+github.com/flintdev/workflow-engine v0.2.5/go.mod h1:A2D+p9rUgQ53MG633xm9pmyHCk/LvBn6CpP1EZS0ANo=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
 github.com/ghodss/yaml v0.0.0-20150909031657-73d445a93680/go.mod h1:4dBDuWmgqj2HViK6kFavaiC9ZROes6MMH2rRYeMEF04=
 github.com/ghodss/yaml v1.0.0 h1:wQHKEahhL6wmXdzwWG11gIVCkOv05bNOh+Rxn0yngAk=
