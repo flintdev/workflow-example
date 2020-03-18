@@ -13,10 +13,12 @@ func ParseDefinition() workflowFramework.Workflow {
 	"startAt": "step1",
 	"trigger": {
 		"model": "expense",
-		"eventType": "ADDED"
+		"eventType": "MODIFIED",
+		"when": "'spec.switch' == 'true'"
 	},
 	"steps": {
 		"step1": {
+			"type": "automation",
 			"nextSteps": [{
 					"name": "step2",
 					"condition": {
@@ -36,16 +38,24 @@ func ParseDefinition() workflowFramework.Workflow {
 			]
 		},
 		"step2": {
+			"type": "manual",
+			"trigger": {
+				"model": "expense",
+				"eventType": "MODIFIED",
+				"when": "'spec.approval' == 'true'"
+			},
 			"nextSteps": [{
 				"name": "step4"
 			}]
 		},
 		"step3": {
+			"type": "automation",
 			"nextSteps": [{
 				"name": "step4"
 			}]
 		},
 		"step4": {
+			"type": "automation",
 			"nextSteps": [{
 				"name": "end"
 			}]
