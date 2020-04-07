@@ -57,10 +57,22 @@ func ParseDefinition() workflowFramework.Workflow {
 		"step5": {
 			"type": "automation",
 			"nextSteps": [{
-				"name": "step6"
-			}]
+				"name": "step6",
+				"when": "'$.workflow1.step1.field5' < '2020-03-01'"
+			},
+			{
+				"name": "step7",
+				"when": "'$.workflow1.step1.field5' >= '2020-03-01'"
+			}
+			]
 		},
 		"step6": {
+			"type": "automation",
+			"nextSteps": [{
+				"name": "end"
+			}]
+		},
+		"step7": {
 			"type": "automation",
 			"nextSteps": [{
 				"name": "end"
